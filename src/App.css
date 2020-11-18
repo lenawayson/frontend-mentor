@@ -1,3 +1,11 @@
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -15,13 +23,16 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* position: fixed; */
+  z-index:1000;
+  top: 0;
+  width: 100vw;
 }
 
 .App-link {
@@ -36,3 +47,47 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (min-width: 600px)
+.line-height {
+  line-height: 40%;
+}
+
+.container {
+  /* margin-top: 15%; */
+  margin-top: 5%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+.page-header {
+  font-size: 18px;
+  color: white;
+  position: fixed;
+  z-index:1000;
+  top: 0;
+  padding-left:50px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  height: 350px;
+  margin: 10px auto;
+  padding: 5px 25px;
+  color: white;
+}
+
+.project:hover {
+  outline: solid 5px #65d2f0;
+}
+
+#profile-card {
+  background-image: url(assets/images/desktop-design.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
